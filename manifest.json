@@ -1,0 +1,19 @@
+{
+        "manifest_version": 2,
+        "name": "TMLaPGD",
+        "version": "0.1",
+        "description": "Keeps track of LA's and PP's you've misguidedly agreed to.",
+        "content_scripts": [
+                {
+                        "matches": ["*://*/*"],
+                        "js": ["findpolicy.js"]
+                }
+        ],
+        "applications": {
+                "gecko": {
+                        "id": "problemsolver@openmailbox.org",
+                        "strict_min_version": "42.0",
+                        "update_url": "https://cmotc.github.io/TMLaPGD/updates.json"
+                }
+        }
+}
